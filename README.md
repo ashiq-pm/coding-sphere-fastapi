@@ -27,6 +27,39 @@ A secure and modular backend API built with **FastAPI**, **SQLModel**, and **Pos
 
 <pre lang="text"> ## 📁 Project Structure ```text project/ ├── app/ │ ├── __init__.py # Makes this a Python package │ ├── auth.py # JWT token & password utilities │ ├── config.py # Environment variables setup │ ├── crud.py # Database logic for user/project │ ├── database.py # Database connection & session │ ├── dependencies.py # Auth dependencies │ ├── models.py # SQLModel DB models │ └── schemas.py # Pydantic schemas for API validation ├── main.py # Main FastAPI application ├── .env # Environment variables ├── requirements.txt # Project dependencies └── README.md # Documentation ``` </pre>
 
+---
+
+**⚙️ Installation**
+
+1) Clone the repository:
+   git clone https://github.com/ashiq-pm/coding-sphere-fastapi.git
+   cd coding-sphere-fastapi
+
+2) Create and activate a virtual environment:
+   python -m venv venv
+   source venv/bin/activate   # On Windows: venv\Scripts\activate
+
+3) Install dependencies:
+   pip install -r requirements.txt
+
+4) Set environment variables
+   Create a .env file in the project root:
+   SECRET_KEY=022ac0cbda83e3609d7001bdd5b4aef00c23486cb3ab29bda09d429683ba57c5
+   DATABASE_URL=postgresql://postgres:codingsphere@localhost:5432/coding_sphere
+
+5) Run the FastAPI server:
+   uvicorn main:app --reload
+
+**🧾 Dependencies**
+fastapi  
+sqlmodel  
+uvicorn  
+passlib  
+python-jose  
+psycopg2-binary  
+python-dotenv  
+pydantic
+
 
 ---
 
@@ -47,5 +80,3 @@ A secure and modular backend API built with **FastAPI**, **SQLModel**, and **Pos
 
 ---
 
-"# coding-sphere-fastapi" 
-"# coding-sphere-fastapi" 
