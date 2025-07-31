@@ -80,3 +80,4 @@ pydantic
 
 ---
 
+➡️ Demo Video: [https://drive.google.com/file/d/1sGyjET7wy6ZfIqU4VHSmQOPSMpiUO7Xi/view?usp=drive_link]
